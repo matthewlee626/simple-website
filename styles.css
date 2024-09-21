@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'PP Right Didone';
+    src: url('/fonts/PP Right Didone - Bold Italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Right Didone';
+    src: url('/fonts/PP Right Didone - Compact Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Didone';
+    src: url('/fonts/PP Right Didone - Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Didone';
+    src: url('/fonts/PP Right Didone - Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Nikkei Maru';
+    src: url('/fonts/PPNikkeiMaru-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'PP Nikkei Maru';
+    src: url('/fonts/PPNikkeiMaru-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'PP Nikkei Maru';
+    src: url('/fonts/PPNikkeiMaru-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'PP Nikkei Maru';
+    src: url('/fonts/PPNikkeiMaru-Ultrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: #888 url('./bg.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PP Nikkei Maru', sans-serif;
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+
+    padding: 75px 100px;
+    border: 5px dashed #fff;
+}
+
+.big-text {
+    font-size: 72px;
+    margin: -5px;
+}
+
+.medium-text {
+    font-size: 48px;
+    margin: 0;
+}
+
+.small-text {
+    font-size: 36px;
+    margin: 0;
+}
+
+.special-text {
+    font-family: 'PP Right Didone', serif;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(1deg); }
+   95% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+  animation: wiggle 1.5s infinite;
+}
+
+.wiggle:hover {
+  animation: none;
+  cursor: pointer;
+}
